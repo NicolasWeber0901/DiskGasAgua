@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "15852773937",
+    "project_id": "disk-gas-e-agua-weber",
+    "storage_bucket": "disk-gas-e-agua-weber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15852773937:android:b7497b34621c65bf52eb10",
+        "android_client_info": {
+          "package_name": "udesc.diskgaseagua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15852773937-r99vm4bob7hv0q1febh2u6mbqbqscvcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo3FUiay5Umc2PTYmq_lLPP8W8UCLPHqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15852773937-r99vm4bob7hv0q1febh2u6mbqbqscvcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
