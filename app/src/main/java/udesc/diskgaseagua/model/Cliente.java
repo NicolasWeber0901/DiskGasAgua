@@ -2,17 +2,17 @@ package udesc.diskgaseagua.model;
 
 public class Cliente extends Pessoa{
 
-    private String email;
     private String cpf;
     private String telefone;
+    private String dataNascimento;
     private Endereco endereco;
 
-    public Cliente(String nome, String cpf, String senha, String email, String telefone,
+    public Cliente(String nome, String cpf, String senha, String telefone, String dataNasc,
                    Endereco endereco) {
         super(nome, senha);
         this.cpf = cpf;
-        this.email = email;
         this.telefone = telefone;
+        this.dataNascimento = dataNasc;
         this.endereco = endereco;
     }
 
@@ -32,12 +32,12 @@ public class Cliente extends Pessoa{
         this.endereco = endereco;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public String getTelefone() {
@@ -51,8 +51,10 @@ public class Cliente extends Pessoa{
     @Override
     public String toString() {
         return "Cliente{" +
-                "email='" + email + '\'' +
+                ", cpf='" + cpf + '\'' +
                 ", telefone='" + telefone + '\'' +
+                ", dataNascimento='" + dataNascimento + '\'' +
+                ", endereco=" + endereco +
                 '}';
     }
 }
