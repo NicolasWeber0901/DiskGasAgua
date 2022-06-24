@@ -43,4 +43,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
 }
