@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_tela_login);
 
         iniciarComponentes();
-
+/*
         btEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +54,39 @@ public class Login extends AppCompatActivity {
                                         enviarMensagemLonga("Logado com sucesso");
 
                                         Intent intent = new Intent(Login.this, ViewHomeAdm.class);
+                                        startActivity(intent);
+                                    }
+                                } else {
+                                    enviarMensagemLonga("Verifique os dados");
+                                    Log.w("Banco", "Error getting documents.", task.getException());
+                                }
+                            }
+                        });
+            }
+        });
+
+*/
+
+    btEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String cpf      = tfCpfLogin.getText().toString();
+                String senha    = tfSenhaLogin.getText().toString();
+
+                Banco.getDb().collection("clientes")
+                        .whereEqualTo("cpf", cpf)
+                        .whereEqualTo("senha", senha)
+                        .get()
+                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                if (task.isSuccessful()) {
+                                    for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                        enviarMensagemLonga("Logado com sucesso");
+
+                                        Intent intent = new Intent(Login.this, ViewHomeCliente.class);
                                         startActivity(intent);
                                     }
                                 } else {

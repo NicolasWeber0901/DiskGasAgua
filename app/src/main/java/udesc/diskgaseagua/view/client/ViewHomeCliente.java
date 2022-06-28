@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import udesc.diskgaseagua.R;
+import udesc.diskgaseagua.view.client.ViewPedidosCliente;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +14,7 @@ public class ViewHomeCliente extends AppCompatActivity {
 
 
 
-    private Button btPedidosCliente, btHistoricoCompraCliente, btContasPagarCliente;
+    private Button btPedidosCliente, btHistoricoComprasCliente, btContasPagarCliente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class ViewHomeCliente extends AppCompatActivity {
         setContentView(R.layout.activity_tela_inicial_cliente);
 
         btPedidosCliente = findViewById(R.id.btPedidosCliente);
-        btHistoricoCompraCliente = findViewById(R.id.btHistoricoCompraCliente);
+        btHistoricoComprasCliente = findViewById(R.id.btHistoricoComprasCliente);
         btContasPagarCliente = findViewById(R.id.btContasPagarCliente);
 
 
@@ -33,18 +34,10 @@ public class ViewHomeCliente extends AppCompatActivity {
             }
         });
 
-        btHistoricoCompraCliente.setOnClickListener(new View.OnClickListener() {
+        btHistoricoComprasCliente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ViewHomeCliente.this, ViewHistoricoCompraCliente.class);
-                startActivity(intent);
-            }
-        });
-
-        btHistoricoCompraCliente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ViewHomeCliente.this, ViewHistoricoCompraCliente.class);
+                Intent intent = new Intent(ViewHomeCliente.this, ViewHistoricoComprasCliente.class);
                 startActivity(intent);
             }
         });

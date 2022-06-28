@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import udesc.diskgaseagua.R;
 
-public class ViewContasPagarCliente extends AppCompatActivity {
-
+public class ViewPagamento extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_contas_pagar_cliente);
+        setContentView(R.layout.activity_view_pagamento);
     }
+
 }

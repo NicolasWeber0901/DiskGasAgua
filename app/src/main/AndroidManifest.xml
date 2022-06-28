@@ -45,8 +45,21 @@
             android:name=".view.Login"
             android:exported="false" />
         <activity
+            android:name=".view.client.ViewHomeCliente"
+            android:exported="false" />
+        <activity
+            android:name=".view.client.ViewPedidosCliente"
+            android:exported="false" />
+        <activity android:name=".view.client.ViewContasPagarCliente"
+            android:exported="false" />
+        <activity android:name=".view.client.ViewPagamento"
+            android:exported="false" />
+        <activity android:name=".view.client.ViewHistoricoComprasCliente"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

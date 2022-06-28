@@ -2,4 +2,7 @@
 <resources>
 
     <item name="btHistoricoCompraCliente" type="id" />
+    <item name="btSomentGas" type="id" />
+    <item name="btSomentAgua" type="id" />
+    <item name="btAmbos" type="id" />
 </resources>
