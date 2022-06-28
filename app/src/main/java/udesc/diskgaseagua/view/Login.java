@@ -20,6 +20,7 @@ import udesc.diskgaseagua.R;
 import udesc.diskgaseagua.dao.Banco;
 import udesc.diskgaseagua.view.adm.ViewHomeAdm;
 import udesc.diskgaseagua.view.client.ViewCadastrarCliente;
+import udesc.diskgaseagua.view.client.ViewHomeCliente;
 
 public class Login extends AppCompatActivity {
 
