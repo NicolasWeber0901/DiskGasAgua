@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfNome"
+        app:layout_constraintTop_toBottomOf="@+id/tfEmail"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -29,7 +29,7 @@
         android:layout_width="240dp"
         android:layout_height="43dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/custom_inputs"
         android:ems="10"
@@ -39,25 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfCidade"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/tfCidade"
-        android:layout_width="240dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/custom_inputs"
-        android:ems="10"
-        android:hint="Cidade"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfBairro"
+        app:layout_constraintTop_toBottomOf="@+id/tfNumero"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -65,7 +47,7 @@
         android:layout_width="240dp"
         android:layout_height="43dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/custom_inputs"
         android:ems="10"
@@ -83,7 +65,7 @@
         android:layout_width="240dp"
         android:layout_height="43dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/custom_inputs"
         android:ems="10"
@@ -101,30 +83,12 @@
         android:layout_width="240dp"
         android:layout_height="43dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/custom_inputs"
         android:ems="10"
         android:hint="Rua"
         android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfDataNasc"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/tfDataNasc"
-        android:layout_width="240dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/custom_inputs"
-        android:ems="10"
-        android:hint="Data de Nascimento"
-        android:inputType="date"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
@@ -137,7 +101,7 @@
         android:layout_width="240dp"
         android:layout_height="43dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/custom_inputs"
         android:ems="10"
@@ -151,11 +115,29 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
+        android:id="@+id/tfEmail"
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/custom_inputs"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfNome"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
         android:id="@+id/tfCpfCadastro"
         android:layout_width="240dp"
         android:layout_height="43dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/custom_inputs"
         android:ems="10"
@@ -173,7 +155,7 @@
         android:layout_width="212dp"
         android:layout_height="47dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="588dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/design_bts"
         android:text="Cadastrar"
@@ -181,6 +163,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tfSenhaCadastro"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

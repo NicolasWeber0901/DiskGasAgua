@@ -4,17 +4,16 @@ public class Cliente extends Pessoa{
 
     private String cpf;
     private String telefone;
-    private String dataNascimento;
     private Endereco endereco;
 
-    public Cliente(String nome, String cpf, String senha, String telefone, String dataNasc,
+    public Cliente(String nome, String cpf, String senha, String email, String telefone,
                    Endereco endereco) {
-        super(nome, senha);
+        super(nome, email, senha);
         this.cpf = cpf;
         this.telefone = telefone;
-        this.dataNascimento = dataNasc;
         this.endereco = endereco;
     }
+
 
     public String getCpf() {
         return cpf;
@@ -32,14 +31,6 @@ public class Cliente extends Pessoa{
         this.endereco = endereco;
     }
 
-    public String getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
     public String getTelefone() {
         return telefone;
     }
@@ -51,9 +42,8 @@ public class Cliente extends Pessoa{
     @Override
     public String toString() {
         return "Cliente{" +
-                ", cpf='" + cpf + '\'' +
+                "cpf='" + cpf + '\'' +
                 ", telefone='" + telefone + '\'' +
-                ", dataNascimento='" + dataNascimento + '\'' +
                 ", endereco=" + endereco +
                 '}';
     }

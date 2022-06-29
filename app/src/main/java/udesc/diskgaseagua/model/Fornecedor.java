@@ -5,8 +5,8 @@ public class Fornecedor extends Pessoa{
     private String cpnj;
     private String razaoSocial;
 
-    public Fornecedor(String nome, String senha, String cpnj, String razaoSocial) {
-        super(nome, senha);
+    public Fornecedor(String nome, String senha, String email, String cpnj, String razaoSocial) {
+        super(nome, email, senha);
         this.cpnj = cpnj;
         this.razaoSocial = razaoSocial;
     }

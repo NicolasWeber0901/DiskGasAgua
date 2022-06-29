@@ -5,8 +5,8 @@ public class Administrador extends Pessoa{
     private int acesso;
     private String cpf;
 
-    public Administrador(String nome, String cpf, String senha, int acesso) {
-        super(nome, senha);
+    public Administrador(String nome, String cpf, String senha, String email, int acesso) {
+        super(nome, email, senha);
         this.cpf = cpf;
         this.acesso = acesso;
     }

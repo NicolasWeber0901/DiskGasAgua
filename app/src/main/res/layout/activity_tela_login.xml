@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.757" />
 
     <EditText
-        android:id="@+id/tfCpfLogin"
+        android:id="@+id/tfEmailLogin"
         android:layout_width="240dp"
         android:layout_height="43dp"
         android:layout_marginStart="98dp"
@@ -46,8 +46,8 @@
         android:drawableStart="@drawable/ic_pessoa"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="CPF"
-        android:inputType="number"
+        android:hint="E-mail"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.419"
@@ -92,7 +92,7 @@
         android:id="@+id/imageView"
         android:layout_width="298dp"
         android:layout_height="242dp"
-        app:layout_constraintBottom_toTopOf="@+id/tfCpfLogin"
+        app:layout_constraintBottom_toTopOf="@+id/tfEmailLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
