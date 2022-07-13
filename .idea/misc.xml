@@ -11,6 +11,7 @@
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.265" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/drawable/ic_launcher_background.xml" value="0.265" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_table_lista_clientes_adm.xml" value="0.365625" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_tela_inicial_adm.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_tela_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_view_cadastrar_cliente.xml" value="0.36666666666666664" />
@@ -20,12 +21,13 @@
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_view_inventory_adm.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_view_relatorios_adm.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/activity_view_requests_adm.xml" value="0.36666666666666664" />
-        <entry key="app/src/main/res/layout/activity_pedidos_cliente.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_tela_inicial_adm.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_tela_inicial_cliente.xml" value="0.22" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/card_cliente.xml" value="0.33" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/DiskGaseAgua/app/src/main/res/layout/lista_cliente_elemento.xml" value="0.365625" />
+        <entry key="app/src/main/res/layout/activity_pedidos_cliente.xml" value="0.2232360097323601" />
+        <entry key="app/src/main/res/layout/activity_tela_inicial_adm.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tela_inicial_cliente.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_tela_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_tela_pedido_cliente.xml" value="0.1921875" />
-        <entry key="app/src/main/res/layout/activity_view_carrinho.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_view_contas_pagar_cliente.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_view_historico_compras_cliente.xml" value="0.2232360097323601" />
         <entry key="app/src/main/res/layout/activity_view_pagamento.xml" value="0.19114583333333332" />

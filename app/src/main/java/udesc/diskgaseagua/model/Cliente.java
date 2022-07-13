@@ -6,6 +6,10 @@ public class Cliente extends Pessoa{
     private String telefone;
     private Endereco endereco;
 
+    public Cliente (){
+        super();
+    }
+
     public Cliente(String nome, String cpf, String senha, String email, String telefone,
                    Endereco endereco) {
         super(nome, email, senha);

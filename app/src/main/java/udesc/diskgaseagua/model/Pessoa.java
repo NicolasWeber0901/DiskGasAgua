@@ -12,6 +12,10 @@ public abstract class Pessoa {
         this.senha = senha;
     }
 
+    public Pessoa() {
+
+    }
+
     public String getNome() {
         return nome;
     }
