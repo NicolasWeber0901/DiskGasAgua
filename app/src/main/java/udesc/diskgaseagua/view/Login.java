@@ -43,8 +43,11 @@ public class Login extends AppCompatActivity {
                 String email        = tfCpfLogin.getText().toString();
                 String senha        = tfSenhaLogin.getText().toString();
 
-                verificaLogin(email, senha);
-
+                if(email.isEmpty() || senha.isEmpty()){
+                    enviarMensagemCurta("Preencha todos os campos!");
+                } else {
+                    verificaLogin(email, senha);
+                }
             }
         });
 
@@ -79,6 +82,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void verificaLogin(String email, String senha){
+
 
         Banco.getDb().collection("usuarios")
                 .whereEqualTo("email", email)
