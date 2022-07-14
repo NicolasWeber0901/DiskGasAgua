@@ -61,17 +61,29 @@ public class ViewCadastrarCliente extends AppCompatActivity {
 
                 String rua          =   tfRua.getText().toString();
                 String bairro       =   tfBairro.getText().toString();
-                int    numero       =   Integer.parseInt(tfNumero.getText().toString());
 
-                int acesso = 2;
+                int    numero;
 
-                Endereco endereco = new Endereco(rua, bairro, numero, "Dona Emma");
-                Cliente cliente = new Cliente(nome, cpf, senha, email, telefone, endereco);
+                if(tfNumero.getText().toString().isEmpty()){
+                    numero = 0;
+                } else {
+                    numero = Integer.parseInt(tfNumero.getText().toString());
+                }
 
-                Usuario usuario = new Usuario(email, senha, 2);
+                if(nome.isEmpty() || telefone.isEmpty() || cpf.isEmpty() || email.isEmpty() ||
+                senha.isEmpty() || rua.isEmpty() || bairro.isEmpty()) {
+                    enviarMensagemCurta("Preencha todos os campos!");
+                } else {
+                    Endereco endereco = new Endereco(rua, bairro, numero, "Dona Emma");
+                    Cliente cliente = new Cliente(nome, cpf, senha, email, telefone, endereco);
 
-                cadastrarCliente(usuario);
-                salvarCliente(cliente);
+                    Usuario usuario = new Usuario(email, senha, 2);
+
+                    cadastrarCliente(usuario);
+                    salvarCliente(cliente);
+                }
+
+
             }
         });
     }
@@ -134,6 +146,7 @@ public class ViewCadastrarCliente extends AppCompatActivity {
                         Intent intent = new Intent(ViewCadastrarCliente.this,
                                 Login.class);
                         startActivity(intent);
+                        finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

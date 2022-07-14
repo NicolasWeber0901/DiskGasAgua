@@ -48,22 +48,6 @@ public class ViewClientesAdm extends AppCompatActivity {
 
         rcListaClientes.setAdapter(viewClientesAdapter);
 
-        /*
-        Banco.getDb().collection("clientes")
-                        .get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-
-                        List<Cliente> clientes = queryDocumentSnapshots.toObjects(Cliente.class);
-
-                        for(Cliente c : clientes){
-                            testeClientes.setText(c.toString());
-                        }
-                    }
-                });
-
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
-        */
         buscarClientes();
 
     }
