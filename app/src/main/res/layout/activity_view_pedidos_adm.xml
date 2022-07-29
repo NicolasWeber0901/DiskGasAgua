@@ -7,10 +7,17 @@
     tools:context=".view.adm.ViewPedidosAdm">
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Tela Pedidos"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="33dp" />
+        android:id="@+id/tvPedidos"
+        android:layout_width="252dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
 </androidx.constraintlayout.widget.ConstraintLayout>

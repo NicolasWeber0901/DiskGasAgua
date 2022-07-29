@@ -21,23 +21,7 @@ public class ViewPedidosCliente extends AppCompatActivity {
 
         btSomenteAgua = findViewById(R.id.btSomenteAgua);
         btSomenteGas = findViewById(R.id.btSomenteGas);
-        btAmbos = findViewById(R.id.btAmbos);
-
-        btSomenteAgua.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ViewPedidosCliente.this, ViewCarrinho.class);
-                startActivity(intent);
-            }
-        });
-
-        btSomenteGas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ViewPedidosCliente.this, ViewCarrinho.class);
-                startActivity(intent);
-            }
-        });
+        btAmbos = findViewById(R.id.btConfirmarCarrinho);
 
         btAmbos.setOnClickListener(new View.OnClickListener() {
             @Override
